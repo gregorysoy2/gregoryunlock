@@ -18,11 +18,11 @@
             line-height: 1.6;
         }
 
-        /* Banner inicial (ahora más corto) */
+        /* Banner inicial (más corto) */
         #banner {
             background-color: #000000;
             color: #ffffff;
-            height: 35vh;               /* antes era 100vh */
+            height: 35vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -33,15 +33,24 @@
         }
 
         #banner h1 {
-            font-size: 2rem;            /* ligeramente reducido */
-            margin-bottom: 0.5rem;
+            font-size: 2rem;
+            margin-bottom: 0.3rem;
             letter-spacing: 2px;
         }
 
         #banner p {
-            font-size: 1rem;            /* ligeramente reducido */
+            font-size: 1rem;
             font-weight: 300;
             max-width: 90%;
+            margin-bottom: 0.2rem;
+        }
+
+        #banner .carriers {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            word-spacing: 8px;
+            margin-top: 0.3rem;
         }
 
         /* Barra de navegación fija (oculta inicialmente) */
@@ -82,6 +91,14 @@
 
         .imei-section {
             margin: 2rem 0;
+        }
+
+        .review-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: #000000;
+            text-align: center;
         }
 
         .input-group {
@@ -205,6 +222,13 @@
             #banner p {
                 font-size: 0.95rem;
             }
+            #banner .carriers {
+                font-size: 0.8rem;
+                word-spacing: 4px;
+            }
+            .review-title {
+                font-size: 1rem;
+            }
             main {
                 padding: 30px 15px;
             }
@@ -217,6 +241,7 @@
     <header id="banner">
         <h1>Gregory Unlock</h1>
         <p>Liberación via IMEI<br>iPhone & Samsung</p>
+        <p class="carriers">AT&T  VERIZON  T-MOBILE  CRICKET  TRACFONE</p>
     </header>
 
     <!-- Barra de navegación fija que aparece al ocultarse el banner -->
@@ -230,6 +255,7 @@
     <main>
         <!-- Sección IMEI -->
         <div class="imei-section">
+            <h3 class="review-title">Solicitar revisión de tu equipo para saber si esta Clean, Reportado o UNPAID.</h3>
             <div class="input-group">
                 <input type="text" id="imei-input" placeholder="IMEI" inputmode="numeric" maxlength="20">
                 <button id="send-review" class="btn-whatsapp">Enviar revisión</button>
