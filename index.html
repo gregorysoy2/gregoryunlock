@@ -18,11 +18,11 @@
             line-height: 1.6;
         }
 
-        /* Banner inicial */
+        /* Banner inicial (ahora más corto) */
         #banner {
             background-color: #000000;
             color: #ffffff;
-            height: 100vh;
+            height: 35vh;               /* antes era 100vh */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -33,13 +33,13 @@
         }
 
         #banner h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 2rem;            /* ligeramente reducido */
+            margin-bottom: 0.5rem;
             letter-spacing: 2px;
         }
 
         #banner p {
-            font-size: 1.3rem;
+            font-size: 1rem;            /* ligeramente reducido */
             font-weight: 300;
             max-width: 90%;
         }
@@ -200,10 +200,10 @@
         /* Responsive ajustes extra */
         @media (max-width: 480px) {
             #banner h1 {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
             }
             #banner p {
-                font-size: 1.1rem;
+                font-size: 0.95rem;
             }
             main {
                 padding: 30px 15px;
